@@ -1,0 +1,197 @@
+if game.PlaceId == 8737899170 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "😈TwlightHub😈 [V1.2]", HidePremium = false, SaveConfig = true, ConfigFolder = "TwlightConfig"})
+
+local InformationTab = Window:MakeTab({
+	Name = "📜Information",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+InformationTab:AddParagraph("Important", "THIS SCRIPT WAS MADE BY TWLIGHTSCRIPTS. PLEASE REPORT ANY BUGS TO THE OFFICIAL TWLIGHTHUB DISCORD SERVER!")
+InformationTab:AddParagraph("Features:", "AutoFarm, Mail Dupe, Trade Scam, Egg Hatch, Minigames, Dupe Huge, Dupe Titanic!")
+
+local AutoFarmTab = Window:MakeTab({
+	Name = "🧑‍🌾AutoFarm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+AutoFarmTab:AddToggle({
+	Name = "Auto Area",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+AutoFarmTab:AddToggle({
+	Name = "Auto Rank",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+AutoFarmTab:AddToggle({
+	Name = "Auto Farm Coins",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+AutoFarmTab:AddToggle({
+	Name = "Auto Farm Gems",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+local MailDupeTab = Window:MakeTab({
+	Name = "📬Mail Dupe",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+MailDupeTab:AddParagraph("Guide","Ensure that you have two distinct accounts and run this script on the account containing the pets/gems (Huge or exclusive pets only). Once you've entered the alternate username, click 'Start Duping' and patiently wait 30 seconds")
+
+MailDupeTab:AddTextbox({
+	Name = "Username",
+	Default = "Type Username!",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+MailDupeTab:AddButton({
+	Name = "Start Duping!",
+	Callback = function()
+      		print("button pressed")
+  	end    
+})
+
+local TradeScamTab = Window:MakeTab({
+	Name = "🔃Trade Scam",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+TradeScamTab:AddParagraph("Guide","To make this work, initiate a trade with another player and ensure to input their username. Once you've entered their username, toggle the 'Freeze Trade' and remove all pets/items/gems")
+
+TradeScamTab:AddTextbox({
+	Name = "Victim Username",
+	Default = "Type Username!",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+
+TradeScamTab:AddToggle({
+	Name = "Freeze Trade",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+local EggHatchTab = Window:MakeTab({
+	Name = "🥚Egg Hatch",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+EggHatchTab:AddParagraph("Guide","Start by coming close to the egg you want to use the futures on, then activate auto hatch before unleashing its potential with the 'Fast Hatch' toggle. MAKE SURE YOU HAVE A DECENT AMOUNT OF COINS.")
+
+EggHatchTab:AddToggle({
+	Name = "Fast Hatching",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+EggHatchTab:AddToggle({
+	Name = "Remove Hatching Animation",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+EggHatchTab:AddToggle({
+	Name = "Auto Hatch",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+local MinigamesTab = Window:MakeTab({
+	Name = "🕹️Minigames",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+MinigamesTab:AddParagraph("Guide","Make sure to enter the area before activating.")
+
+local FishingSection = MinigamesTab:AddSection({
+	Name = "Fishing"
+})
+
+MinigamesTab:AddToggle({
+	Name = "Fast Fishing",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+local DiggingSection = MinigamesTab:AddSection({
+	Name = "Digging"
+})
+
+MinigamesTab:AddToggle({
+	Name = "Fast Digging",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+local DupeHugeTab = Window:MakeTab({
+	Name = "ⓗDupe Huge",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+DupeHugeTab:AddParagraph("Guide","Equip the Huge you would like to duplicate, then unequip. Click 'Start Duping' and have fun! JUST BE CAREFUL: DUPING TOO MUCH CAN LEAD TO PERMANENT BAN IF ANTICHEAT OR MODERATORS NOTICE")
+
+DupeHugeTab:AddButton({
+	Name = "Start Duping",
+	Callback = function()
+			  print("button pressed")
+	  end    
+})
+
+local DupeTitanicTab = Window:MakeTab({
+	Name = "ⓣDupe Titanic",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+DupeTitanicTab:AddParagraph("Guide","Equip the Titanic you would like to duplicate, then unequip. Click 'Start Duping' and have fun! JUST BE CAREFUL: DUPING TOO MUCH CAN LEAD TO PERMANENT BAN IF ANTICHEAT OR MODERATORS NOTICE")
+
+DupeTitanicTab:AddButton({
+	Name = "Start Duping",
+	Callback = function()
+			  print("button pressed")
+	  end    
+})
+
+end
+OrionLib:Init()
